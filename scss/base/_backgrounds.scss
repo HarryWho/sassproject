@@ -1,0 +1,10 @@
+@use '../abstract/colors' as c;
+@each $name,
+$SOMEVALUE in c.$colors {
+  @each $tint,
+  $value in $SOMEVALUE {
+    .bg-#{$name}-#{$tint} {
+      background-color: $value;
+    }
+  }
+}
