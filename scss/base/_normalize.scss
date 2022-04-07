@@ -1,7 +1,21 @@
+@use '../abstract' as mx;
 *,
 *::after,
 *::before {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+}
+
+.container {
+  padding-top: 60px;
+  margin-left: 60px;
+  transition: all 350ms ease-in-out;
+  @include mx.for-size(tablet-landscape-up) {
+    margin-left: 21%;
+  }
+}
+
+.text-center {
+  text-align: center;
 }

@@ -1,10 +1,7 @@
-@use '../abstract/colors' as c;
+@use '../abstract' as c;
 @each $name,
-$SOMEVALUE in c.$colors {
-  @each $tint,
-  $value in $SOMEVALUE {
-    .bg-#{$name}-#{$tint} {
-      background-color: $value;
-    }
+$value in c.$theme-colors {
+  .bg-#{$name} {
+    background-color: $value;
   }
 }

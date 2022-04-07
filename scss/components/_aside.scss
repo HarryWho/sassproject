@@ -1,7 +1,18 @@
+@use '../abstract' as mx;
 aside {
   position: fixed;
   top: 0;
   left: 0;
   bottom: 0;
-  width: 20%;
+  width: 50px;
+  transition: all 350ms ease-in-out;
+  background-color: mx.$gray-800;
+  @include mx.for-size(tablet-landscape-up) {
+    width: 20%;
+  }
+}
+
+aside.collapse,
+.brand {
+  width: 50px;
 }

@@ -1,0 +1,158 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.container {
+  padding-top: 60px;
+  margin-left: 60px;
+  transition: all 350ms ease-in-out;
+}
+@media (min-width: 900px) {
+  .container {
+    margin-left: 21%;
+  }
+}
+
+.text-center {
+  text-align: center;
+}
+
+.bg-primary {
+  background-color: #0d6efd;
+}
+
+.bg-secondary {
+  background-color: #6c757d;
+}
+
+.bg-success {
+  background-color: #198754;
+}
+
+.bg-info {
+  background-color: #0dcaf0;
+}
+
+.bg-warning {
+  background-color: #ffc107;
+}
+
+.bg-danger {
+  background-color: #dc3545;
+}
+
+.bg-light {
+  background-color: #f8f9fa;
+}
+
+.bg-dark {
+  background-color: #212529;
+}
+
+.btn-primary {
+  color: #0d6efd;
+}
+
+.btn-secondary {
+  color: #6c757d;
+}
+
+.btn-success {
+  color: #198754;
+}
+
+.btn-info {
+  color: #0dcaf0;
+}
+
+.btn-warning {
+  color: #ffc107;
+}
+
+.btn-danger {
+  color: #dc3545;
+}
+
+.btn-light {
+  color: #f8f9fa;
+}
+
+.btn-dark {
+  color: #212529;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: 50px;
+  box-shadow: 0 0 5px 1px rgba(0, 0, 0, 0.4);
+  z-index: 1000;
+}
+nav .nav-container {
+  display: flex;
+  height: 50px;
+  justify-content: space-between;
+  align-items: center;
+}
+nav .nav-container .menu {
+  margin-right: 50px;
+}
+nav .nav-container ul {
+  display: flex;
+  list-style: none;
+}
+nav .nav-container ul li {
+  padding: 0 20px;
+}
+nav .nav-container a {
+  text-decoration: none;
+  font-size: 1.25rem;
+  color: rgb(246, 248, 250);
+}
+nav .brand {
+  text-align: center;
+  width: 80px;
+  transition: all 350ms ease-in-out;
+}
+@media (min-width: 900px) {
+  nav .brand {
+    width: 23%;
+  }
+}
+nav .brand span {
+  display: none;
+}
+@media (min-width: 900px) {
+  nav .brand span {
+    display: inline-block;
+  }
+}
+nav .brand .hamburger {
+  float: right;
+}
+
+aside {
+  position: fixed;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  width: 50px;
+  transition: all 350ms ease-in-out;
+  background-color: #343a40;
+}
+@media (min-width: 900px) {
+  aside {
+    width: 20%;
+  }
+}
+
+aside.collapse,
+.brand {
+  width: 50px;
+}
+
+/*# sourceMappingURL=style.css.map */
